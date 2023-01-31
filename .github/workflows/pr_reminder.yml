@@ -16,3 +16,6 @@ jobs:
         webhook-url: ${{ secrets.TEAMS_WEBHOOK }}
         provider: 'msteams'
         ignore-label: no-reminder
+        # TODO: If you didn't get notified about a PR, FIXME
+        github-provider-map: >-
+          ${{ secrets.MAP_USERNAMES_TEAMS }}
