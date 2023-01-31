@@ -2,9 +2,7 @@ name: PR review reminders
 on:
   schedule:
     # Every weekday at 8:30a CST / 14:30 UTC and 1:30p CST / 19:30 UTC
-    # - cron: '30 14,19 * * 1-5'
-    # Every 5 minutes for testing
-    - cron: '*/5 * * * *'
+    - cron: '30 14,19 * * 1-5'
 
 jobs:
   pr-reviews-reminder:
@@ -20,4 +18,4 @@ jobs:
         ignore-label: no-reminder
         # TODO: If you didn't get notified about a PR, FIXME
         github-provider-map: >-
-          $${{ secrets.MAP_USERNAMES_TEAMS }}
+          ${{ secrets.MAP_USERNAMES_TEAMS }}
