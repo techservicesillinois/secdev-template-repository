@@ -17,5 +17,4 @@ jobs:
         provider: 'msteams'
         ignore-label: no-reminder
         # TODO: If you didn't get notified about a PR, FIXME
-        github-provider-map: >-
-          ${{ vars.MAP_USERNAMES_TEAMS }}
+        github-provider-map: ${{ vars.MAP_USERNAMES_TEAMS }}
