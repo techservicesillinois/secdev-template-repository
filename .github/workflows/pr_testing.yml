@@ -8,6 +8,7 @@ jobs:
     - name: Dump Username Mapping
       run: |
         echo $USERNAMES
+        echo $MAP_USERNAMES_TEAMS
       env: 
         USERNAMES: >-
           ${{ vars.MAP_USERNAMES_TEAMS }}
