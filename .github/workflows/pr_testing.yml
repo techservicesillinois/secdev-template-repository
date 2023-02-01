@@ -10,4 +10,4 @@ jobs:
         echo $USERNAMES
       env: 
         USERNAMES: >-
-          ${{ secrets.MAP_USERNAMES_TEAMS }}
+          ${{ variables.MAP_USERNAMES_TEAMS }}
