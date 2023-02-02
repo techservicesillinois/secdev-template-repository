@@ -18,4 +18,24 @@ jobs:
         provider: 'msteams'
         ignore-label: no-reminder
         # TODO: If you didn't get notified about a PR, FIXME
-        github-provider-map: zdc217:zdc@illinois.edu
+        github-provider-map: >-
+          apetsche1:apetsche@illinois.edu,
+          asvalent:asvalent@illinois.edu,
+          baristaTam:buch1@illinois.edu,
+          cstephns:cstephns@illinois.edu,
+          ddriddle:ddriddle@illinois.edu,
+          EdTheDev:delaport@illinois.edu,
+          gshere:shere@illinois.edu,
+          ktlack:klacker6@illinois.edu,
+          livn46:rheren@illinois.edu,
+          mabaumgartner:mab@illinois.edu,
+          MKletz:delaport@illinois.edu,
+          mpitcel:mpitcel2@illinois.edu,
+          PrabhaManda:pmanda@illinois.edu,
+          rdonovan92:rdonovan@illinois.edu,
+          safletcher42:safletch@illinois.edu,
+          spaldr:spaldr@illinois.edu,
+          spencer-sharp:swsharp@illinois.edu,
+          tjuddill:tjudd@illinois.edu,
+          wennebo1:wennebo1@illinois.edu,
+          zdc217:zdc@illinois.edu
