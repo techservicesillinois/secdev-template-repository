@@ -1,0 +1,14 @@
+name: PR review reminders
+on: [push, pull_request]
+
+jobs:
+  test:
+    runs-on: ubuntu-latest
+    steps:
+    - name: Dump Username Mapping
+      run: |
+        echo $USERNAMES
+        echo $MAP_USERNAMES_TEAMS
+      env: 
+        USERNAMES: >-
+          ${{ vars.MAP_USERNAMES_TEAMS }}
