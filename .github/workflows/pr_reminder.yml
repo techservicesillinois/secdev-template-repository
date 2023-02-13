@@ -9,7 +9,8 @@ jobs:
     runs-on: ubuntu-latest
     steps:
     - name: curl
-      run: curl -H 'Content-Type: application/json' -d '{"text": "Hello World 2/6/2023"}' $WEBHOOK
+      run: |
+        curl -H 'Content-Type: application/json' -d '{"text": "Hello World 2/6/2023"}' $WEBHOOK
       env:
         WEBHOOK: ${{ secrets.TEAMS_WEBHOOK }}
     # https://github.com/DavideViolante/pr-reviews-reminder-action/releases
