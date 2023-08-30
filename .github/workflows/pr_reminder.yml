@@ -1,10 +1,9 @@
 name: PRs reviews reminder
-    
-on: pull_request  # temporarily for testing
-  
-  # schedule:
-  #  # Every weekday every 2 hours during working hours (utc), send notification 
-  #  - cron: "0 13-22/2 * * 1-5"
+
+on:  
+  schedule:
+  # Every weekday every 2 hours during working hours (utc), send notification 
+  - cron: "0 13-22/2 * * 1-5"
 
 jobs:
   pr-reviews-reminder:
