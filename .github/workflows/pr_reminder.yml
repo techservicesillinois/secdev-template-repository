@@ -13,7 +13,7 @@ jobs:
     steps:
     - name: Test
       run: |
-        for tag in ${{ join(fromJSON(vars.MAP_USERNAMES_TEAMS_JSON)), ' ') }}
+        for tag in ${{ join(fromJSON(vars.MAP_USERNAMES_TEAMS_JSON), ' ') }}
         do
           echo "Pushing image $tag"
         done
