@@ -7,20 +7,23 @@ on: pull_request  # temporarily for testing
 #    # Every weekday at 8:30a CST / 14:30 UTC and 1:30p CST / 19:30 UTC
 #    - cron: '30 14,19 * * 1-5'
 
-env:
-  USER_MAP: ${{ fromJSON(vars.MAP_USERNAMES_TEAMS_JSON) }}
-
 jobs:
   pr-reviews-reminder:
     runs-on: ubuntu-latest
     steps:
     - name: Test
-      run: echo "$USER_MAP"
+      run: |
+        for tag in ${{ join(fromJSON(vars.MAP_USERNAMES_TEAMS_JSON)), ' ') }}
+        do
+          echo "Pushing image $tag"
+        done
+      shell: bash
+        
     - uses: DavideViolante/pr-reviews-reminder-action@v2.7.0
       env:
         GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
       with:
         webhook-url: ${{ secrets.TEAMS_WEBHOOK }}
         provider: 'msteams'
-        github-provider-map: ${{ env.USER_MAP }} 
+        github-provider-map: ${{ fromJSON(vars.MAP_USERNAMES_TEAMS_JSON) }}
       
