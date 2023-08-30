@@ -17,5 +17,5 @@ jobs:
       with:
         webhook-url: ${{ secrets.TEAMS_WEBHOOK }}
         provider: 'msteams'
-        github-provider-map: ${{ fromJSON(env.MAP_USERNAMES_TEAMS_JSON) }} 
+        github-provider-map: ${{ fromJSON(vars.MAP_USERNAMES_TEAMS_JSON) }} 
       
