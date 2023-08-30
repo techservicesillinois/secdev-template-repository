@@ -11,6 +11,8 @@ jobs:
   pr-reviews-reminder:
     runs-on: ubuntu-latest
     steps:
+    - name: Test
+      run: echo " ${{ fromJSON(vars.MAP_USERNAMES_TEAMS_JSON) }} "
     - uses: DavideViolante/pr-reviews-reminder-action@v2.7.0
       env:
         GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
