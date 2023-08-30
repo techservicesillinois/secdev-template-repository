@@ -15,19 +15,5 @@ jobs:
       with:
         webhook-url: ${{ secrets.TEAMS_WEBHOOK }}
         provider: 'msteams'
-        github-provider-map: >
-          apetsche1:apetsche@illinois.edu,
-          asvalent:asvalent@illinois.edu,
-          baristaTam:buch1@illinois.edu,
-          cstephns:cstephns@illinois.edu,
-          ddriddle:ddriddle@illinois.edu,
-          domeyerj:domeyerj@illinois.edu,
-          EdTheDev:delaport@illinois.edu,
-          gshere:shere@illinois.edu,
-          ktlack:klacker6@illinois.edu,
-          livn46:rheren@illinois.edu,
-          mabaumgartner:mab@illinois.edu,
-          spaldr:spaldr@illinois.edu,
-          tjuddill:tjudd@illinois.edu,
-          wennebo1:wennebo1@illinois.edu,
-          zdc217:zdc@illinois.edu
+        github-provider-map: ${{ fromJSON(env.MAP_USERNAMES_TEAMS_JSON) }} 
+      
