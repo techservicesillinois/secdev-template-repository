@@ -8,7 +8,7 @@ on: pull_request  # temporarily for testing
 #    - cron: '30 14,19 * * 1-5'
 
 env:
-  user_map: ${{ fromJSON(vars.MAP_USERNAMES_TEAMS_JSON) }}
+  USER_MAP: ${{ fromJSON(vars.MAP_USERNAMES_TEAMS_JSON) }}
 
 jobs:
   pr-reviews-reminder:
@@ -22,5 +22,5 @@ jobs:
       with:
         webhook-url: ${{ secrets.TEAMS_WEBHOOK }}
         provider: 'msteams'
-        github-provider-map: ${{ fromJSON(vars.MAP_USERNAMES_TEAMS_JSON) }} 
+        github-provider-map: ${{ env.USER_MAP }} 
       
