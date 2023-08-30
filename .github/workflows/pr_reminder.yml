@@ -7,12 +7,15 @@ on: pull_request  # temporarily for testing
 #    # Every weekday at 8:30a CST / 14:30 UTC and 1:30p CST / 19:30 UTC
 #    - cron: '30 14,19 * * 1-5'
 
+env:
+  user_map: ${{ fromJSON(vars.MAP_USERNAMES_TEAMS_JSON) }}
+
 jobs:
   pr-reviews-reminder:
     runs-on: ubuntu-latest
     steps:
     - name: Test
-      run: echo " ${{ fromJSON(vars.MAP_USERNAMES_TEAMS_JSON) }} "
+      run: echo "$USER_MAP"
     - uses: DavideViolante/pr-reviews-reminder-action@v2.7.0
       env:
         GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
