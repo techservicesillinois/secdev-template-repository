@@ -1,4 +1,5 @@
 # Changelog
+
 All notable changes to this project will be documented in this file.
 
 The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/),
@@ -18,6 +19,9 @@ End-of-Life was decided upon based on these dependencies:
   - <dependency (month year)
  
 ## Unreleased
+
 ### Added
+
 ### Changed
+
 ### Removed
