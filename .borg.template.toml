@@ -1,10 +1,9 @@
 [template]
 files = [
     ".gitattributes",
+    ".github/workflows/pr_reminder.yml",
+    ".github/workflows/cleanup.yml",
     ".gitignore",
     "CODE_OF_CONDUCT.md",
     "SECURITY.md",
-    ".github/workflows/pr_reminder.yml",
-    ".github/workflows/cleanup.yml",
-    "Makefile",
 ]
