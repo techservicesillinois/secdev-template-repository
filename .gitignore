@@ -14,10 +14,12 @@ __pycache__/
 .coverage
 report.html
 
+# macOS
+.DS_Store
+
 # Common
 .bash_*
 .build
-.DS_Store # macOS
 .env
 .gnupg/*
 .histfile
