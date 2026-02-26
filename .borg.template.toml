@@ -10,3 +10,6 @@ files = [
     "CODE_OF_CONDUCT.md",
     "SECURITY.md",
 ]
+[generate.gitattributes]
+# Include all template files above
+include_template_files = true
