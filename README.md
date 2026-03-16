@@ -16,6 +16,9 @@ for information about our development standards.
 
 [kbsearch]: https://answers.uillinois.edu/illinois/search.php?q=cybersecurity+developer&cat=0
 
+For steps we usually do after creating a new repository, see [After Creating a new Repository](https://github.com/techservicesillinois/secdev-template-repository/wiki/After-creating-a-new-repository).
+
+
 The remainder of this `README.md` contains example text.
 
 ## Data Sources
