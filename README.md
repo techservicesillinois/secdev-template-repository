@@ -18,8 +18,9 @@ for information about our development standards.
 
 For steps we usually do after creating a new repository, see [After Creating a new Repository](https://github.com/techservicesillinois/secdev-template-repository/wiki/After-creating-a-new-repository).
 
-
 The remainder of this `README.md` contains example text.
+
+Information about how to fill out the data stores and endpoints can be found on the [Knowledge Base](https://answers.uillinois.edu/illinois/111571).
 
 ## Data Sources
 
