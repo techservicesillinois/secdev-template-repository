@@ -24,6 +24,8 @@ Information about how to fill out the data stores and endpoints can be found on 
 
 ## Data Sources
 
+For data sensitivity, see [Data Classification](https://www.cybersecurity.illinois.edu/data-classification/).
+
 |Data Store|Data Type|Sensitivity|Notes|
 |----------|---------|-----------|-----|
 
