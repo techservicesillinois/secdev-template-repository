@@ -29,8 +29,8 @@ Information about how to fill out the data stores and endpoints can be found on 
 
 ## Endpoint Connections
 
-|Endpoint|Purpose|Stage|Access|
-|--------|-------|-----|------|
+|Endpoint|Purpose|Stage|Access|Contact|
+|--------|-------|-----|------|-------|
 
 ## Product Support
 
