@@ -1,10 +1,7 @@
-# This file configures `borg` when this repository is used as a source.
-# This file should only be present in a template repository.
-
-# If this file is present in a child repository, it should be deleted.
+# This file configures `borg` to compare files to the Illinois Cybersecurity Development default template
 
 [template]
-files_url = "https://raw.githubusercontent.com/techservicesillinois/secdev-template-python/refs/heads/main/"
+files_url = "https://raw.githubusercontent.com/techservicesillinois/secdev-template-repository/refs/heads/main/"
 files = [
     ".github/workflows/pr_reminder.yml",
     ".github/workflows/cleanup.yml",
