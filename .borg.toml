@@ -12,33 +12,40 @@ files = [
 ##############################################################################
 #
 # Guidance on LICENSE.txt and COPYRIGHT.txt
+#
+# In COPYRIGHT.txt: 
+#
+# Assign Copyright to each primary contributor.
+#
+# Paid work for the University of Illinois should also assign Copyright to the
+# University of Illinois Board of Trustees to allow the University to
+# re-license the work.
+#
+# Example copyright text: 
+#
+# Copyright <year(s)> <primary contributor 1>, <primary contributor 2>,
+# <primary contributor 3> and the University of Illinois Board of Trustees
 # 
-# Assign Copyright to each primary contributor
-# to retain agility in licensing.
+# In LICENSE.txt:
 #
-# Also assign Copyright to the Board of Trustees
-# to ensure the University retains the right to re-license the work.
+# A license that protects the University from liability should be inlcuded in 
+# public source code.
 #
-# Licenses that protect the University from liability are typically acceptable.
-#
-# Strong copyleft licenses are preferred to compel adopters to share updates 
-# and security patches they create.
+# Strong copyleft licenses may be preferred on larger works to compel adopters
+# to share updates and security patches they create.
 #
 # The University of Illinois Office of Technology Management
 # can assist with novel licensing needs.
 # 
-# Example copyright text: 
-#
-# Copyright <year> <primary contributor 1>, <primary contributor 2>,
-# <primary contributor 3> and the University of Illinois Board of Trustees
-# 
 ##############################################################################
 
 file_contents = [
+  # Paid work should co-assign copyright to the Board of Trustees
 	['COPYRIGHT.txt', 'and the Univesity of Illinois Board of Trustees'],
-	# LICENSE.txt is typically a copy of https://www.gnu.org/licenses/agpl-3.0.txt
 	['LICENSE.txt', '"AS IS"'],  # A warrany disclaimer is required
 	['README.md', '# About'],
+  # Document Data Sources and Endpoints to comply with University IT security policy
+  # https://answers.uillinois.edu/illinois/111571
 	['README.md', '## Data Sources'],
 	['README.md', '## Endpoint Connections'],
 ]
