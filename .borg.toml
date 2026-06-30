@@ -41,13 +41,19 @@ files = [
 
 file_contents = [
   # Paid work should co-assign copyright to the Board of Trustees
-	['COPYRIGHT.txt', 'and the Univesity of Illinois Board of Trustees'],
+	['COPYRIGHT.txt', 'and the University of Illinois Board of Trustees'],
 	['LICENSE.txt', '"AS IS"'],  # A warrany disclaimer is required
 	['README.md', '# About'],
   # Document Data Sources and Endpoints to comply with University IT security policy
   # https://answers.uillinois.edu/illinois/111571
 	['README.md', '## Data Sources'],
 	['README.md', '## Endpoint Connections'],
+	['README.md', 'Support'],
+  # README should describe support as 'best-effort'
+	['README.md', 'on a best-effort basis'],
+  # README should give an estimated date for end of support
+	['README.md', 'End-of-Support'],
+
 ]
 
 [generate.gitattributes]
