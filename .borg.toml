@@ -8,6 +8,46 @@ files = [
     "CODE_OF_CONDUCT.md",
     "SECURITY.md",
 ]
+
+##############################################################################
+#
+# Guidance on LICENSE.txt and COPYRIGHT.txt
+# 
+# Assign Copyright to each primary contributor
+# to retain agility in licensing.
+#
+# Also assign Copyright to the Board of Trustees
+# to ensure the University retains the right to re-license the work.
+#
+# Licenses that protect the University from liability are typically acceptable.
+#
+# Strong copyleft licenses are preferred to compel adopters to share updates 
+# and security patches they create.
+#
+# The University of Illinois Office of Technology Management
+# can assist with novel licensing needs.
+# 
+# Example copyright text: 
+#
+# Copyright <year> <primary contributor 1>, <primary contributor 2>,
+# <primary contributor 3> and the University of Illinois Board of Trustees
+# 
+##############################################################################
+
+file_contents = [
+	['COPYRIGHT.txt', 'and the Univesity of Illinois Board of Trustees'],
+	['COPYRIGHT.txt', 'primary contributors: '],
+	# LICENSE.txt is typically a copy of https://www.gnu.org/licenses/agpl-3.0.txt
+	['LICENSE.txt', '"AS IS"'],  # A warrany disclaimer is required
+	['README.md', '# About'],
+	['README.md', '## Data Sources'],
+	['README.md', '## Endpoint Connections'],
+]
+
 [generate.gitattributes]
+files = [
+    # All machine generated files
+    ".gitattributes",
+]
 # Include all template files above
 include_template_files = true
