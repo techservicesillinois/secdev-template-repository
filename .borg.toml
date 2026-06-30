@@ -1,4 +1,6 @@
 # This file configures `borg` to compare files to the Illinois Cybersecurity Development default template
+#   pip install git+https://github.com/techservicesillinois/secdev-template-repository.git
+#   borg compare
 
 [template]
 files_url = "https://raw.githubusercontent.com/techservicesillinois/secdev-template-repository/refs/heads/main/"
@@ -28,8 +30,8 @@ files = [
 # 
 # In LICENSE.txt:
 #
-# A license that protects the University from liability should be inlcuded in 
-# public source code.
+# A license that protects contributors and the University from liability
+# should be inlcuded in public source code.
 #
 # Strong copyleft licenses may be preferred on larger works to compel adopters
 # to share updates and security patches they create.
