@@ -36,7 +36,6 @@ files = [
 
 file_contents = [
 	['COPYRIGHT.txt', 'and the Univesity of Illinois Board of Trustees'],
-	['COPYRIGHT.txt', 'primary contributors: '],
 	# LICENSE.txt is typically a copy of https://www.gnu.org/licenses/agpl-3.0.txt
 	['LICENSE.txt', '"AS IS"'],  # A warrany disclaimer is required
 	['README.md', '# About'],
