@@ -1,6 +1,10 @@
 # This file configures `borg` to compare files to the Illinois Cybersecurity Development default template
+# 
+# Usage:
+#
 #   pip install git+https://github.com/techservicesillinois/secdev-template-repository.git
 #   borg compare
+#   borg --help
 
 [template]
 files_url = "https://raw.githubusercontent.com/techservicesillinois/secdev-template-repository/refs/heads/main/"
